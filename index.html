@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GRC Automation Engineer | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Glowing background orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">LIVE <span>GRC</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#what-i-do">What I Do</a>
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Cloud compliance • Automation • DevSecOps • CI/CD • AI Governance • Continuous Monitoring</p>
+        <h1>
+          I turn<br />
+          <span class="accent">governance & controls</span><br />
+          into code.
+        </h1>
+        <p class="subtitle">
+          I’m a GRC Automation Engineer focused on turning frameworks like
+          NIST 800-53, CIS, and ISO 27001 into automated checks, pipelines,
+          and dashboards in the cloud, so compliance runs by design, not by panic.
+        </p>
+        <div class="hero-actions">
+          <a href="#what-i-do" class="btn primary-btn">See what I automate</a>
+          <a href="#projects" class="btn ghost-btn">View my projects</a>
+        </div>
+        <div class="hero-tags">
+          <span>Compliance-as-Code</span>
+          <span>AWS Cloud Security</span>
+          <span>Security GRC</span>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="hero-card">
+          <p class="hero-card-label">Sample automation</p>
+          <pre class="code-block">
+resource "policy_control" "encrypted_s3" {
+  framework   = "CIS AWS"
+  control_id  = "2.1"
+  check       = "s3_bucket_encrypted"
+  remediation = "enable_default_encryption"
+}</pre>
+          <p class="hero-card-foot">
+            <span class="dot"></span> Turning control text into executable logic.
+          </p>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric">
+            <span class="metric-label">Controls automated</span>
+            <span class="metric-value">100+</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Frameworks mapped</span>
+            <span class="metric-value">CIS • NIST • ISO</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section fade-section">
+      <h2>Who I am</h2>
+      <p class="section-text">
+        I live at the intersection of <strong>governance</strong> and
+        <strong>engineering</strong>. Instead of treating audits as a once-a-year fire drill,
+        I design <strong>repeatable, codified controls</strong> that run continuously
+        in the cloud.
+      </p>
+      <p class="section-text">
+        My focus: taking policies, standards, and framework requirements and
+        expressing them as <strong>pipelines, rules, and dashboards</strong> that
+        engineers can actually utilize without translating “security” for every sprint.
+      </p>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section id="what-i-do" class="section fade-section">
+      <h2>What I do as a GRC Automation Engineer</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>🎯 Translate frameworks into controls</h3>
+          <p>
+            Break down NIST 800-53, CIS benchmarks, ISO 27001, and internal policies
+            into <strong>clear, testable control logic</strong> that developers and
+            security teams can plug into CI/CD and cloud platforms.
+          </p>
+        </article>
+        <article class="card">
+          <h3>🤖 Build compliance-as-code</h3>
+          <p>
+            Use infrastructure-as-code and policy-as-code patterns to
+            <strong>detect and remediate misconfigurations</strong> in AWS and other
+            cloud environments, reducing manual evidence collection.
+          </p>
+        </article>
+        <article class="card">
+          <h3>📊 Turn evidence into dashboards</h3>
+          <p>
+            Aggregate logs, configs, and scan results into
+            <strong>auditor-friendly views</strong> that show which controls are
+            passing, failing, or drifting over time.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section fade-section">
+      <h2>My automation stack</h2>
+      <p class="section-text">
+        Every environment is different, but my approach stays the same:
+        <strong>use code to express intent, and automation to enforce it.</strong>
+      </p>
+
+      <div class="pill-row">
+        <span class="pill">AWS / Cloud Security</span>
+        <span class="pill">Infrastructure-as-Code</span>
+        <span class="pill">Policy-as-Code</span>
+        <span class="pill">Security Controls Mapping</span>
+        <span class="pill">GRC & Risk</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section fade-section">
+      <h2>Highlighted projects</h2>
+      <p class="section-text">
+        These projects show how I approach GRC as an engineering discipline:
+        <strong>controls in code, evidence in pipelines.</strong>
+      </p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>AWS Security Hub CloudFormation</h3>
+          <p>
+            CloudFormation templates that enable AWS Config, attach key security
+            rules, and integrate AWS Security Hub with standards like NIST CSF and CIS.
+          </p>
+          <p>
+            <a href="https://github.com/Runc9/AWS_Security_Hub_CloudFormation" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>IAM Authentication Audit Tracker</h3>
+          <p>
+            CloudTrail-driven tracking of IAM authentication activities with a focus
+            on high-signal events, drift detection, and audit-ready evidence.
+          </p>
+          <p>
+            <a href="https://github.com/Runc9/iam-authentication-audit-tracker" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>CloudTrail Blindspot Risk Assessment</h3>
+          <p>
+            Research-driven project that surfaces non-standard AWS API endpoints and
+            blindspots where CloudTrail logging may not behave as expected.
+          </p>
+          <p>
+            <a href="https://github.com/Runc9" target="_blank">
+              Browse repo on GitHub →
+            </a>
+          </p>
+        </article>
+      </div>
+
+      <p class="section-text" style="margin-top: 18px;">
+        You can explore more projects and labs on my GitHub profile:
+        <a href="https://github.com/Runc9" target="_blank">github.com/Runc9</a>
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section fade-section">
+      <h2>Let’s connect</h2>
+      <p class="section-text">
+        Interested in making your GRC program more <strong>engineer-friendly</strong>
+        and <strong>automation-first</strong>? Reach out and let’s talk.
+      </p>
+
+      <div class="contact-grid">
+  <a class="contact-card" href="mailto:olaysf@pm.me" target="_blank">
+    <h3>✉️ Email</h3>
+    <p>olaysf@pm.me</p>
+  </a>
+  <a class="contact-card" href="https://www.linkedin.com/in/olasecurity" target="_blank">
+    <h3>🔗 LinkedIn</h3>
+    <p>Let’s connect professionally.</p>
+  </a>
+  <a class="contact-card" href="https://github.com/Runc9" target="_blank">
+    <h3>💻 GitHub</h3>
+    <p>See my automation & GRC projects.</p>
+  </a>
+</div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> GRC Automation Engineer </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
